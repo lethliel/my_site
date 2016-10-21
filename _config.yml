@@ -1,0 +1,4 @@
+title: Lethliel 
+highlighter: true
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
