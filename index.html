@@ -2,17 +2,13 @@
 layout: default
 ---
 
-<div class="row hide-for-small" id="hero-slider">
-  <div class="twelve columns" id="slider">
-    <div id="featured">
-      <img src="images/slide1.jpg" alt="HTML Captions" data-caption="#slide1Caption" />
-      <img src="images/slide2.jpg" alt="HTML Captions" data-caption="#slide2Caption" />
-      <img src="images/slide3.jpg" alt="HTML Captions" data-caption="#slide3Caption" />
-    </div>
-  </div> 
+{% assign posts = site.posts %}
+<div class="row">
+  <div class="nine columns">
+    {% include post-listing.html %}
+  </div>
+  <div class="three columns">
+    Here will be some other thingies
+  </div>
 </div>
-
-<span class="orbit-caption" id="slide1Caption"><h3>Look at all the</h3></span>
-<span class="orbit-caption" id="slide2Caption"><h3>beautyful galaxies</h3></span>
-<span class="orbit-caption" id="slide3Caption"><h3>that exists in our universe</h3></span>
 

@@ -1,0 +1,5 @@
+{% for post in posts | sort posts.date limit: 5 %}
+  <div class="twelve columns">
+    {{ post.title }} from {{ post.author }} on {{ post.date}}
+  </div>
+{% endfor %}
